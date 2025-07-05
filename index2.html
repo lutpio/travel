@@ -78,7 +78,7 @@
       <div class="container">
         <div class="row flex-lg-row align-items-center g-5">
           <div class="col-12 col-lg-6">
-            <img class="img-fluid rounded-5" src="img/Tentang.jpeg" alt="" />
+            <img class="img-fluid rounded-4" src="img/Tentang.jpeg" alt="" />
           </div>
           <div class="col-12 col-lg-6">
             <h5 class="mb-1 fw-semibold" style="color: #f8aa3e">
@@ -160,63 +160,71 @@
         <div class="col">
           <div class="card h-100 border-0">
             <img
+              style="filter: brightness(70%)"
               src="https://image-korankaltim.sgp1.cdn.digitaloceanspaces.com/berita/medium/c6b8a990a4aa3b369da41d7c2a216045_2501061227342467.jpeg"
-              class="card-img object-fit-cover"
+              class="card-img object-fit-cover h-100"
               alt="..."
             />
-            <div class="card-body py-2">
+            <div class="centered text-white fs-2 fw-semibold">Samarinda</div>
+            <!-- <div class="card-body py-2">
               <h5 class="fw-semibold text-center text-body-secondary">
                 Samarinda
               </h5>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col">
           <div class="card h-100 border-0">
             <img
-              src="https://image-korankaltim.sgp1.cdn.digitaloceanspaces.com/berita/medium/c6b8a990a4aa3b369da41d7c2a216045_2501061227342467.jpeg"
-              class="card-img object-fit-cover"
+              style="filter: brightness(70%)"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/84/Pulau_Beras_Basah_March_2018.jpg"
+              class="card-img object-fit-cover h-100"
               alt="..."
             />
-            <div class="card-body py-2">
+            <div class="centered text-white fs-2 fw-semibold">Bontang</div>
+            <!-- <div class="card-body py-2">
               <h5 class="fw-semibold text-center text-body-secondary">
-                Bontang
+                Samarinda
               </h5>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col">
           <div class="card h-100 border-0">
             <img
-              src="https://image-korankaltim.sgp1.cdn.digitaloceanspaces.com/berita/medium/c6b8a990a4aa3b369da41d7c2a216045_2501061227342467.jpeg"
-              class="card-img object-fit-cover"
+              style="filter: brightness(70%)"
+              src="https://asset-2.tstatic.net/kaltim/foto/bank/images/20250118_tugu-Madinatul-Iman_landmark-baru_Balikpapan_Dome.jpg"
+              class="card-img object-fit-cover h-100"
               alt="..."
             />
-            <div class="card-body py-2">
+            <div class="centered text-white fs-2 fw-semibold">Balikpapan</div>
+            <!-- <div class="card-body py-2">
               <h5 class="fw-semibold text-center text-body-secondary">
-                Tenggarong
+                Samarinda
               </h5>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col">
           <div class="card h-100 border-0">
             <img
-              src="https://image-korankaltim.sgp1.cdn.digitaloceanspaces.com/berita/medium/c6b8a990a4aa3b369da41d7c2a216045_2501061227342467.jpeg"
-              class="card-img object-fit-cover"
+              style="filter: brightness(70%)"
+              src="https://tenggarong.kukarkab.go.id/wp-content/uploads/2024/11/Gambar-1-1.png"
+              class="card-img object-fit-cover h-100"
               alt="..."
             />
-            <div class="card-body py-2">
+            <div class="centered text-white fs-2 fw-semibold">Tenggarong</div>
+            <!-- <div class="card-body py-2">
               <h5 class="fw-semibold text-center text-body-secondary">
-                Balikpapan
+                Samarinda
               </h5>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- kota -->
+    <!-- Layanan -->
     <div class="container-fluid py-5" style="background-color: #1c2a47">
       <div class="container">
         <div class="row mb-5 g-5">
@@ -247,12 +255,23 @@
           </div>
         </div>
         <div class="d-grid d-lg-block">
-          <a href="" class="btn btn-light">Pesan Sekarang</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6281250826264&amp;text=Halo+Admin+TIRAN%27S+TRANSPORT.%0Aapakah+layanan+masih+tersedia%3F"
+            class="btn btn-warning btn-lg"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="bi bi-whatsapp"></i> Pesan Sekarang
+          </a>
+          <!-- %0A = Baris Baru -->
+          <!-- ' = %27 -->
+          <!-- ? = %3F -->
+          <!-- Spasi = + -->
         </div>
       </div>
     </div>
 
-    <!-- Layanan -->
+    <!-- Armada -->
     <div class="container py-5">
       <div class="text-center">
         <h5 class="mb-1 fw-semibold" style="color: #f8aa3e">Armada Kami</h5>
@@ -262,86 +281,139 @@
       </div>
       <div class="row row-cols-1 row-cols-md-4 g-3">
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/Avanza.jpeg"
-              style="object-position: 100% -200px"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Avanza</h5>
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <img
+                src="img/Avanza.jpeg"
+                class="card-img object-fit-cover"
+                alt="..."
+                height="250"
+              />
+              <h5 class="fw-bold pt-3">Toyota Avanza</h5>
+              <p class="mb-0 text-secondary fw-light">Mulai dari:</p>
+              <h5 class="fw-semibold mb-3">Rp800.000</h5>
+              <a href="" class="btn btn-warning w-100">
+                Selengkapnya <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/fortuner.jpeg"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Fortuner</h5>
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <img
+                src="img/reborn.jpeg"
+                class="card-img object-fit-cover"
+                alt="..."
+                height="250"
+              />
+              <h5 class="fw-bold pt-3">Toyota Innova Reborn</h5>
+              <p class="mb-0 text-secondary fw-light">Mulai dari:</p>
+              <h5 class="fw-semibold mb-3">Rp1.000.000</h5>
+              <a href="" class="btn btn-warning w-100">
+                Selengkapnya <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/Haice.jpeg"
-              style="object-position: 100% -100px"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Haice</h5>
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <img
+                src="img/fortuner.jpeg"
+                class="card-img object-fit-cover"
+                alt="..."
+                height="250"
+              />
+              <h5 class="fw-bold pt-3">Toyota Fortuner</h5>
+              <p class="mb-0 text-secondary fw-light">Mulai dari:</p>
+              <h5 class="fw-semibold mb-3">Rp2.300.000</h5>
+              <a href="" class="btn btn-warning w-100">
+                Selengkapnya <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/haice_commuter.jpeg"
-              style="object-position: 100% -230px"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Haice Commuter</h5>
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <img
+                src="img/Haice.jpeg"
+                class="card-img object-fit-cover"
+                alt="..."
+                height="250"
+              />
+              <h5 class="fw-bold pt-3">Toyota Haice</h5>
+              <p class="mb-0 text-secondary fw-light">Mulai dari:</p>
+              <h5 class="fw-semibold mb-3">Rp3.000.000</h5>
+              <a href="" class="btn btn-warning w-100">
+                Selengkapnya <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/reborn.jpeg"
-              style="object-position: 100% -180px"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Reborn</h5>
-            </div>
-          </div>
+      </div>
+    </div>
+
+    <!-- Armada Lainnya -->
+    <div class="container p-3 p-lg-5 rounded" style="background-color: #1c2a47">
+      <div class="row g-4 d-flex align-items-center">
+        <div class="col-12 col-lg-6">
+          <h5 class="mb-1 fw-semibold" style="color: #f8aa3e">
+            TIRAN'S TRANSPORT
+          </h5>
+          <h3 class="text-white fw-semibold">
+            Lihat Jenis Mobil Lainnya beserta Harganya
+          </h3>
         </div>
-        <div class="col">
-          <div class="card h-100 border-0 shadow-sm">
-            <img
-              src="img/toyota_innova.jpeg"
-              style="object-position: 100% -200px"
-              class="card-img object-fit-cover"
-              alt="..."
-              height="250"
-            />
-            <div class="card-body py-2">
-              <h5 class="fw-semibold text-body-secondary">Innova</h5>
-            </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-end">
+          <button
+            class="btn btn-warning d-none d-lg-block"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Klik Disini
+          </button>
+          <button
+            class="btn btn-warning w-100 d-block d-lg-none"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Klik Disini
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Armada Kami</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>Mitsubishi Pajero | Rp2.300.000</li>
+              <li>Honda CR-V Prestige | Rp2.500.000</li>
+              <li>Toyota Avanza | Rp800.000</li>
+              <li>Toyota Innova Reborn | Rp1.000.000</li>
+              <li>Toyota Hiace Commuter 14 seat | Rp2.000.000</li>
+              <li>Toyota Fortuner | Rp2.300.000</li>
+              <li>Toyota Hiace Premio 10 seat | Rp3.000.000</li>
+            </ol>
           </div>
         </div>
       </div>
@@ -420,108 +492,117 @@
         </div>
       </div>
     </div>
-    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
-        <div class="col-12 col-lg-3 text-center">
-          <img class="mb-2" src="img/logo3.png" alt="" height="130" />
-          <small class="d-block mb-3"
-            >Delina Trans adalah jasa agen travel reguler di Kalimantan Timur
-            yang sudah terpercaya dan berpengalaman.</small
-          >
-        </div>
-        <div class="col-12 col-lg-2">
-          <h5>Layanan</h5>
-          <p class="mb-0"><strong>Rute Travel</strong></p>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Samarinda - Tenggarong</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Samarinda - Tenggarong</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Samarinda - Balikpapan</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Samarinda - Bontang</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Pesan Rute Lain</a
-              >
-            </li>
-          </ul>
-          <p class="mb-0"><strong>Carter</strong></p>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Mitsubishi Pajero</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Toyota Fortuner</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Honda CR-V Prestige</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Toyota Innova Reborn</a
-              >
-            </li>
-            <li class="mb-1">
-              <a class="link-secondary text-decoration-none" href="#"
-                >Lainnya</a
-              >
-            </li>
-          </ul>
-        </div>
+    <div class="bg-body-tertiary">
+      <footer class="container py-4 mt-md-5 pt-md-5">
+        <div class="row">
+          <div class="col-12 col-lg-3 text-center">
+            <img class="mb-2" src="img/logo3.png" alt="" height="130" />
+            <small class="d-block mb-3 text-secondary"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              culpa, porro omnis quae aliquid nostrum doloribus
+            </small>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h3 class="text-body-secondary fw-semibold">Layanan</h3>
+            <p class="mb-0 text-body-secondary"><strong>Rute Travel</strong></p>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Samarinda - Tenggarong</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Samarinda - Tenggarong</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Samarinda - Balikpapan</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Samarinda - Bontang</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Pesan Rute Lain</a
+                >
+              </li>
+            </ul>
+            <p class="mb-0 text-body-secondary"><strong>Carter</strong></p>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Mitsubishi Pajero</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Toyota Fortuner</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Honda CR-V Prestige</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Toyota Innova Reborn</a
+                >
+              </li>
+              <li class="mb-1">
+                <a class="link-secondary text-decoration-none" href="#"
+                  >Lainnya</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="col-12 col-lg-3">
-          <h5>Kontak</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1">
-              <!-- <a class="link-secondary text-decoration-none" href="#">Team</a> -->
-              <p class="text-secondary">
-                <strong class="text-body-secondary">Alamat</strong><br />Jl, Jl.
-                Sejahtera 1 Gg. Pulau Indah No.rt.34, Temindung Permai, Kec.
-                Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242
-              </p>
-            </li>
-            <li class="mb-1">
-              <!-- <a class="link-secondary text-decoration-none" href="#">Team</a> -->
-              <p class="text-secondary">
-                <strong class="text-body-secondary">Telpon</strong><br />
-                081649475422 / 085254717184
-              </p>
-            </li>
-          </ul>
+          <div class="col-12 col-lg-3">
+            <h3 class="text-body-secondary">Kontak</h3>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1">
+                <!-- <a class="link-secondary text-decoration-none" href="#">Team</a> -->
+                <p class="text-secondary">
+                  <strong class="text-body-secondary">Alamat</strong><br />Jl.
+                  Sejahtera 1 Gg. Pulau Indah No.rt.34, Temindung Permai, Kec.
+                  Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242
+                </p>
+              </li>
+              <li class="mb-1">
+                <!-- <a class="link-secondary text-decoration-none" href="#">Team</a> -->
+                <p class="text-secondary">
+                  <strong class="text-body-secondary">Telpon</strong><br />
+                  081649475422 / 085254717184
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6854683210695!2d117.16920460000001!3d-0.4675697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6796c7cec4b4b%3A0xb63885b075e46f56!2sTravel%20samarinda%20balikpapan%20armajaya%20transport!5e0!3m2!1sid!2sid!4v1751701130074!5m2!1sid!2sid"
+              height="100%"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-12 col-lg-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6854683210695!2d117.16920460000001!3d-0.4675697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6796c7cec4b4b%3A0xb63885b075e46f56!2sTravel%20samarinda%20balikpapan%20armajaya%20transport!5e0!3m2!1sid!2sid!4v1751701130074!5m2!1sid!2sid"
-            height="100%"
-            width="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <div class="py-2" style="background-color: #1c2a47">
+      <p class="text-center text-light fw-semibold mb-0">
+        © 2025 - TIRAN'S TRANSPORT |
+        <span class="fw-light">With support from Armajaya</span>
+      </p>
+    </div>
+
     <script type="module">
       var slider = tns({
         container: ".my-slider",

@@ -5,6 +5,23 @@
 body {
   margin: 0;
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-warning {
+  background-color: #f8aa3e !important;
+  border-color: #f8aa3e !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+  background-color: #e89b2e !important; /* Versi sedikit lebih gelap */
+  border-color: #e89b2e !important;
+}
 .img-product {
   height: 500px; /* Atur tinggi tetap */
   object-fit: cover;
