@@ -1,3 +1,23 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+body {
+  margin: 0;
+}
+.img-product {
+  height: 500px; /* Atur tinggi tetap */
+  object-fit: cover;
+  width: 100%;
+}
+.img-nav {
+  height: 130px;
+}
+@media screen and (max-width: 576px) {
+  .img-nav {
+    height: 70px;
+  }
+  .img-product {
+    height: 180px; /* atau sesuaikan sendiri */
+  }
+}
