@@ -207,11 +207,11 @@
           <div class="card h-100 border-0">
             <img
               style="filter: brightness(70%)"
-              src="https://tenggarong.kukarkab.go.id/wp-content/uploads/2024/11/Gambar-1-1.png"
+              src="https://asset.kompas.com/crops/Hi5XXdue9kPfFmKL0CyuLDJ3vB4=/43x0:1066x682/750x500/data/photo/2023/02/19/63f1b8accc8e4.png"
               class="card-img object-fit-cover h-100"
               alt="..."
             />
-            <div class="centered text-white fs-2 fw-semibold">Tenggarong</div>
+            <div class="centered text-white fs-2 fw-semibold">Banjarmasin</div>
             <!-- <div class="card-body py-2">
               <h5 class="fw-semibold text-center text-body">
                 Samarinda
@@ -288,9 +288,14 @@
               <h5 class="fw-bold pt-3">Toyota Avanza</h5>
               <p class="mb-0 text-secondary fw-light">Mulai dari:</p>
               <h5 class="fw-semibold mb-3">Rp800.000</h5>
-              <a href="" class="btn btn-warning w-100">
-                Selengkapnya <i class="bi bi-arrow-right"></i
-              ></a>
+              <button
+                type="button"
+                class="btn btn-warning w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Selengkapnya <i class="bi bi-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -347,6 +352,32 @@
               ></a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Armada Toyota Avanza -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Toyota Avanza
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
         </div>
       </div>
     </div>
@@ -491,139 +522,130 @@
     </div>
 
     <!-- faq -->
-    <div class="container py-5">
-      <div class="row gx-4">
-        <div class="col-12 col-lg-5">
-          <h2 class="mb-5 fw-bold text-body text-center">
-            Frequently Asked Question
+    <div class="w-100 mx-auto px-3 py-5" style="max-width: 800px">
+      <h2 class="mb-3 fw-bold text-body text-center">
+        Frequently Asked Question
+      </h2>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item rounded-0">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button rounded-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="true"
+              aria-controls="collapse1"
+            >
+              Bagaimana cara melakukan pemesanan?
+            </button>
           </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item’s accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It’s also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-7">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item rounded-0">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button rounded-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1"
-                  aria-expanded="true"
-                  aria-controls="collapse1"
-                >
-                  Bagaimana cara melakukan pemesanan?
-                </button>
-              </h2>
-              <div
-                id="collapse1"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed rounded-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+              aria-expanded="false"
+              aria-controls="collapse2"
+            >
+              Apakah layanan tersedia 24 jam?
+            </button>
+          </h2>
+          <div
+            id="collapse2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item’s accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It’s also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed rounded-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse2"
-                  aria-expanded="false"
-                  aria-controls="collapse2"
-                >
-                  Apakah layanan tersedia 24 jam?
-                </button>
-              </h2>
-              <div
-                id="collapse2"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed rounded-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+              aria-expanded="false"
+              aria-controls="collapse3"
+            >
+              Apakah bisa membatalkan atau mengubah jadwal pemesanan?
+            </button>
+          </h2>
+          <div
+            id="collapse3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item’s accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It’s also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed rounded-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse3"
-                  aria-expanded="false"
-                  aria-controls="collapse3"
-                >
-                  Apakah bisa membatalkan atau mengubah jadwal pemesanan?
-                </button>
-              </h2>
-              <div
-                id="collapse3"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item rounded-0">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed rounded-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse4"
-                  aria-expanded="false"
-                  aria-controls="collapse4"
-                >
-                  Apakah bisa request lokasi penjemputan dan pengantaran di luar
-                  rute biasa?
-                </button>
-              </h2>
-              <div
-                id="collapse4"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-0">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed rounded-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4"
+            >
+              Apakah bisa request lokasi penjemputan dan pengantaran di luar
+              rute biasa?
+            </button>
+          </h2>
+          <div
+            id="collapse4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item’s accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It’s also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
             </div>
           </div>
         </div>
@@ -647,12 +669,12 @@
             <ul class="list-unstyled text-small">
               <li class="mb-1">
                 <a class="link-secondary text-decoration-none" href="#"
-                  >Samarinda - Tenggarong</a
+                  >Samarinda - Banjarmasin</a
                 >
               </li>
               <li class="mb-1">
                 <a class="link-secondary text-decoration-none" href="#"
-                  >Samarinda - Tenggarong</a
+                  >Samarinda - Senggata</a
                 >
               </li>
               <li class="mb-1">
