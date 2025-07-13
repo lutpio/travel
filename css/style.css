@@ -1,10 +1,18 @@
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
   margin: 0;
 }
+.top-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url('https://wise.wika.co.id/storage/news/istana_neg_577_0507132732.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .centered {
   position: absolute;
   top: 50%;

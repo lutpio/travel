@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splide Main & Thumbnail Slider</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"
+    />
+
+    <style>
+      /* Optional styling */
+      .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #thumbnail-slider .splide__slide {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      #thumbnail-slider .splide__slide .is-active {
+        opacity: 1;
+        border: 2px solid #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-100 mx-auto px-3 py-5" style="max-width: 800px">
+      <!-- Main Slider -->
+      <section id="main-slider" class="splide mb-3" aria-label="Main slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/Avanza.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/Avanza.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/fortuner.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Thumbnail Slider -->
+      <section
+        id="thumbnail-slider"
+        class="splide"
+        aria-label="Thumbnail slider"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/Avanza.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/Avanza.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/fortuner.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/haice_commuter.jpeg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script>
+      var main = new Splide("#main-slider", {
+        type: "fade",
+        heightRatio: 0.5,
+        pagination: false,
+        arrows: false,
+        cover: true,
+      });
+
+      var thumbnails = new Splide("#thumbnail-slider", {
+        rewind: true,
+        fixedWidth: 104,
+        fixedHeight: 58,
+        isNavigation: true,
+        gap: 10,
+        focus: "center",
+        pagination: false,
+        cover: true,
+        dragMinThreshold: {
+          mouse: 4,
+          touch: 10,
+        },
+        breakpoints: {
+          640: {
+            fixedWidth: 66,
+            fixedHeight: 38,
+          },
+        },
+      });
+
+      main.sync(thumbnails);
+      main.mount();
+      thumbnails.mount();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
