@@ -33,14 +33,12 @@ body {
   pointer-events: none;
   border-radius: 0 0 1rem 1rem; /* Sesuaikan jika pakai Bootstrap rounded-4 */
 }
-.btn2 {
+/* .btn2 {
   bottom: 36px;
   right: 18px;
   color: white;
   position: fixed;
-  /* padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 0.75rem; */
+
   text-align: center;
   display: inline-block;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -49,7 +47,7 @@ body {
 .contact {
   background-color: #25d366;
   cursor: pointer;
-}
+} */
 
 .centered {
   position: absolute;
